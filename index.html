@@ -8,199 +8,193 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
-<body onload="myFunction()" >
-
-    <div id="loader"></div>
-    <div id="myDiv" class="animate-bottom">
-
-        <header class="header_logo1">
-            <h1 class="logo">
-                Ohmyfood
-            </h1>
-        </header>
-
-
-        <section class="localisation">
-
-            <i class="fas fa-map-marker-alt"></i>
-            <span class="text_localisation">Paris, Belleville </span>
-
-        </section>
-
-
-
-        <section class="presentation">
-
-            <h2 class="pre1">
-                Réservez le menu qui</br> vous convient
-            </h2>
-
-            <p class="pre2">
-                Découvrez des restaurants d'exception, sélectionnés par nos soins
-            </p>
-
-            <a class="btn_explore"> Explorer nos restaurants</a>
-
-        </section>
-
-
-        <section class="fonctionnement">
-
-            <div class="fct_container">
-
-                <h2 class="fonctionnement_titre">Fonctionnement</h2>
-
-                <ol class="etapes">
-
-                    <li class="etape">
-
-                        <i class="fas fa-mobile-alt fas icone"></i>
-                        <span class="etape_text">choisissez un restaurant</span>
-                    </li>
-
-                    <li class="etape">
-
-                        <i class="fas fa-list-ul fas icone"></i>
-                        <span class="etape_text">Composez votre menu</span>
-                    </li>
-
-                    <li class="etape">
-
-                        <i class="fas fa-store fas icone"></i>
-                        <span class="etape_text">Déguster au restaurant</span>
-                    </li>
-
-                </ol>
-
-            </div>
-
-        </section>
-
-        <section class="selection">
-
-            <h2 class="selection_titre">Restaurants</h2>
-
-            <div class="slct_container1">
-
-                <a class="menu" href="menu_1.html">
-
-                    <img src="img/maison_rostang.jpg" alt class="menu_img">
-                    <footer class="menu_footer">
-                        <div class="menu_contenu">
-                            <h3 class="menu_titre">Maison Rostang</h3>
-                            <span class="menu_adresse">Rue Rennequin</span>
-                        </div>
-
-                        <div class="menu_btn">
-                         <i class="far fa-heart" aria-hidden="true"></i> 
-                        </div>
-                    </footer>
-                </a>
-
-                <a class="menu" href="menu_2.html">
-
-                    <img src="img/arome.jpg" alt class="menu_img">
-                    <footer class="menu_footer">
-                        <div class="menu_contenu">
-                            <h3 class="menu_titre">L'Arome</h3>
-                            <span class="menu_adresse">Chagny</span>
-                        </div>
-
-                        <div class="menu_btn">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </footer>
-
-                </a>
-            </div>
-
-            <div class="slct_container2">
-                <a class="menu" href="menu_3.html">
-
-                    <img src="img/copenhague.jpg" alt class="menu_img">
-                    <footer class="menu_footer">
-                        <div class="menu_contenu">
-                            <h3 class="menu_titre">Copenhague</h3>
-                            <span class="menu_adresse">Champs-Elysées</span>
-                        </div>
-
-                        <div class="menu_btn">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </footer>
-
-                </a>
-
-                <a class="menu" href="menu_4.html">
-
-                    <img src="img/catelan.jpg" alt class="menu_img">
-                    <footer class="menu_footer">
-                        <div class="menu_contenu">
-                            <h3 class="menu_titre">Le Pré Catelan</h3>
-                            <span class="menu_adresse">Bois de Boulogne</span>
-                        </div>
-
-                        <div class="menu_btn">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </footer>
-
-                </a>
-
-            </div>
-        </section>
-
-
-
-        <footer class="footer">
-            <div class="footer_container">
-                <span class="logo_foot">Ohmyfood</span>
-
-                <ul class="footer_ul">
-                    <li class="footer_li">
-                        <a class="footer_liens" href="#">
-                            <i class="fas fa-utensils fas footer_icone"></i>
-                            Proposer un restaurant
-                        </a>
-                    </li>
-
-                    <li class="footer_li">
-                        <a class="footer_liens" href="#">
-                            <i class="fas fa-hands-helping fas footer_icone"></i>
-                            Devenir partenaire
-                        </a>
-                    </li>
-
-                    <li class="footer_li">
-                        <a class="footer_liens" href="#">
-                            Mentions légales
-                        </a>
-                    </li>
-
-                    <li class="footer_li">
-                        <a class="footer_liens" href="mailto:serviceohmyfood@contact.com">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-
-            </div>
-        </footer>
+<body>
+    <div class="loader">
+        <div class="loader__itemContainer">
+            <div class="loader__item loader__item--1"></div>
+            <div class="loader__item loader__item--2"></div>
+            <div class="loader__item loader__item--3"></div>
+        </div>
     </div>
-    <script>
-        var myVar;
-        
-        function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-        </script>
+
+    <header class="header_logo1">
+        <h1 class="logo">
+            Ohmyfood
+        </h1>
+    </header>
+
+
+    <section class="localisation">
+
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="text_localisation">Paris, Belleville </span>
+
+    </section>
+
+    <section class="presentation">
+
+        <h2 class="pre1">
+            Réservez le menu qui</br> vous convient
+        </h2>
+
+        <p class="pre2">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins
+        </p>
+
+        <a class="btn_explore" href="#ancre"> Explorer nos restaurants</a>
+
+    </section>
+
+
+    <section class="fonctionnement">
+
+        <div class="fct_container">
+
+            <h2 class="fonctionnement_titre">Fonctionnement</h2>
+
+            <ol class="etapes">
+
+                <li class="etape">
+
+                    <i class="fas fa-mobile-alt fas icone"></i>
+                    <span class="etape_text">choisissez un restaurant</span>
+                </li>
+
+                <li class="etape">
+
+                    <i class="fas fa-list-ul fas icone"></i>
+                    <span class="etape_text">Composez votre menu</span>
+                </li>
+
+                <li class="etape">
+
+                    <i class="fas fa-store fas icone"></i>
+                    <span class="etape_text">Déguster au restaurant</span>
+                </li>
+
+            </ol>
+
+        </div>
+
+    </section>
+
+    <section class="selection">
+
+        <h2 class="selection_titre">Restaurants</h2>
+
+        <div class="slct_container1">
+
+            <a class="menu" href="menu_1.html">
+
+                <img src="img/maison_rostang.jpg" alt class="menu_img">
+                <footer class="menu_footer">
+                    <div class="menu_contenu">
+                        <h3 class="menu_titre">La palette du goût</h3>
+                        <span class="menu_adresse">Rue Rennequin</span>
+                    </div>
+                    <div id="ancre"></div>
+                    <div class="menu_btn">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                    </div>
+                </footer>
+            </a>
+
+            <a class="menu" href="menu_2.html">
+
+                <img src="img/arome.jpg" alt class="menu_img">
+                <footer class="menu_footer">
+                    <div class="menu_contenu">
+                        <h3 class="menu_titre">Le délice des sens</h3>
+                        <span class="menu_adresse">Chagny</span>
+                    </div>
+
+                    <div class="menu_btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </footer>
+
+            </a>
+        </div>
+
+        <div class="slct_container2">
+            <a class="menu" href="menu_3.html">
+
+                <img src="img/copenhague.jpg" alt class="menu_img">
+                <footer class="menu_footer">
+                    <div class="menu_contenu">
+                        <h3 class="menu_titre">La note enchantée</h3>
+                        <span class="menu_adresse">Champs-Elysées</span>
+                    </div>
+
+                    <div class="menu_btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </footer>
+
+            </a>
+
+            <a class="menu" href="menu_4.html">
+
+                <img src="img/catelan.jpg" alt class="menu_img">
+                <footer class="menu_footer">
+                    <div class="menu_contenu">
+                        <h3 class="menu_titre">À la française</h3>
+                        <span class="menu_adresse">Rue de la haie</span>
+                    </div>
+
+                    <div class="menu_btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </footer>
+
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer_container">
+            <span class="logo_foot">Ohmyfood</span>
+
+            <ul class="footer_ul">
+                <li class="footer_li">
+                    <a class="footer_liens" href="#">
+                        <i class="fas fa-utensils fas footer_icone"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+
+                <li class="footer_li">
+                    <a class="footer_liens" href="#">
+                        <i class="fas fa-hands-helping fas footer_icone"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+
+                <li class="footer_li">
+                    <a class="footer_liens" href="#">
+                        Mentions légales
+                    </a>
+                </li>
+
+                <li class="footer_li">
+                    <a class="footer_liens" href="mailto:serviceohmyfood@contact.com">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+
+
 </body>
+
+</html>
